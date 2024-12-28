@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Produtct</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="search">
+      <input type="search" id="searched" placeholder="Search Your Product" />
+      <button onclick="filteredProduct()">search</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <td>SN_NO</td>
+          <td>NAME</td>
+          <td>IMAGE</td>
+          <td>COLOR</td>
+          <td>PRICE</td>
+        </tr>
+      </thead>
+
+      <tbody id="tablebody">
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="4">Total price</td>
+          <td id="totalPrice"></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
